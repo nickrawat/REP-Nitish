@@ -1,39 +1,68 @@
-<ul class="menu">
-        <li class="to-home"><a href="https://newevolutiondesigns.com/images/freebies/cat-wallpaper-16.jpg">Home</a></li>
-        <li><a href="#about">About cats</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
+body,div,p {
+	margin:0;
+	padding:0;
+	font-family:Helvetica,sans-serif;
+	font-size:18px;
+}
 
-    <div id="about" class="page">
-        <div class="page-content">
-            <h2>About cats</h2>
 
-            <p>Cats are cute</p>
-        </div>
-    </div>
+html {
+	background:url("http://ivayloyovchev.com/pulsepro/data/img/gallery/wedding/IMG_3312.jpg") no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
 
-    <div id="gallery" class="page">
-        <div class="page-content">
-            <h2>Gallery</h2>
+.menu {
+	position:fixed;
+	top:10%;
+	left:-40px;
+	z-index:100;
+}
 
-            <p>Gallery with cats</p>
-        </div>
-    </div>
+.menu li {
+	list-style:none;
+	display:block;
+	margin-bottom:5px;
+	margin-left:0;
+	padding:20px;
+	background-color:rgba(0,0,0,0.7);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	text-align:center;
+	width:140px;
+	cursor:pointer;
+}
 
-    <div id="links" class="page">
-        <div class="page-content">
-            <h2>Links</h2>
+.menu li.active {
+	background-color:rgba(91,193,177,.75);
+	cursor:default;
+}
 
-            <p>Links to blogs with cats</p>
-        </div>
-    </div>
+.menu li a {
+	text-decoration:none;
+	color:#fff;
+}
 
-    <div id="contacts" class="page">
-        <div class="page-content">
-            <h2>Contacts</h2>
+.page {
+	position:relative;
+	background-color:rgba(0,0,0,0.7);
+	width:70%;
+	height:100%;
+	position:fixed;
+	left:-70%;
+	overflow:hidden;
+	z-index:10;
+}
 
-            <p>Some contact form</p>
-        </div>
-    </div>
+.page-content {
+	position:absolute;
+	width:55%;
+	height:80%;
+	top:10%;
+	right:15%;
+	color:#fff;
+	overflow:auto;
+}
